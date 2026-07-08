@@ -76,7 +76,110 @@
       <section id="contato">
         <h2>Cadastro / Contato</h2>
         <form class="form-contato" method="post" action="servidor.php">
+         
+         <fieldset>
+         <legend>Dados para login</legend>
+          <label for="nome">Nome:</label> <br />
+          <input
+          type="text"
+          name="nome"
+          id="nome"
+          placeholder="Digite seu nome"
+          required
+          minlength="3"
+          />
+          <br> <br>
+
+          <label for="idade">Idade</label> <br />
+          <input
+          type="number"
+          name="idade"
+          id="idade"
+          placeholder="Informe sua idade"
+          min="18"
+          max="120"
+          required/>
+          <br> <br>
+
+      
+          <label for="genero">Gênero</label> <br />
+          <select name="category" id="genero">
+          <option value="">Selecione...</option>
+          <option value="feminino">Feminino</option>
+          <option value="masculino">Masculino</option>
+          <option value="outro">Outro</option>
+          </select>
+          <br> <br>
           
+          <label for="genero">Outros</label> <br />
+          <textarea 
+          id="outro" 
+          name="outro" 
+          rows="2" 
+          cols="30"
+          maxlength="25" 
+          placeholder="Digite seu gênero"></textarea>
+
+          </fieldset>
+          <br> <br>
+          
+          <fieldset>
+          <legend>Demais informações</legend>
+          <label for="email">E-mail</label> <br>
+          <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Digite seu email"
+          required />
+          <br> <br>
+
+          <label for="senha">Senha</label> <br />
+          <input
+          type="password"
+          name="senha"
+          id="senha"
+          placeholder="Digite sua senha"
+          required
+          minlength="8"/>
+
+          <br />
+          <br />
+          
+          <input type="radio" name="client-type" id="radio-pf" value="pf" />
+          <label for="radio-pf">Pessoa Física</label>
+          <br />
+          <input type="radio" name="client-type" id="radio-pj" value="pj" />
+          <label for="radio-pj">Pessoa Jurídica</label>
+        
+             <legend>Checkbox</legend>
+          <input
+          type="checkbox"
+          name="preferences"
+          id="check-offers"
+          value="offers"
+        />
+        <!-- ...value="offers" checked/> deixa pré-selecionado-->
+        <label for="check-offers">Receber ofertas</label>
+        <br />
+        <input
+          type="checkbox"
+          name="preferences"
+          id="check-news"
+          value="news"
+        />
+        <label for="check-news">Newsletter</label>
+        <br />
+        <input type="checkbox" name="preferences" id="check-sup" value="sup" />
+        <label for="check-sup">Suporte</label>
+
+          </fieldset>
+          
+
+          
+          
+        
+
         </form>
       </section>
 
