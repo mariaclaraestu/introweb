@@ -1,208 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Minha Loja</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Loja</title>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header class="header">
+      <h1>Minha Loja</h1>
 
-  <!-- Cabeçalho -->
-  <header class="header">
-    <h1>Minha Loja</h1>
-
-    <nav class="nav-menu">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main id="home">
-
-    <!-- Produtos -->
-    <section class="products" id="produtos">
-      <h2>Produtos em Destaque</h2>
-
-      <!-- Lista de categorias -->
-      <aside class="categories">
-        <h3>Categorias</h3>
-
+      <nav class="nav-menu">
         <ul>
-          <li>Eletrônicos</li>
-          <li>Roupas</li>
-          <li>Acessórios</li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
-      </aside>
+      </nav>
+    </header>
 
-      <!-- Tabela de produtos -->
-      <section class="product-list">
-        <h3>Lista de Produtos</h3>
+    <main id="home">
+      <!-- Produtos -->
+      <section class="products" id="produtos">
+        <h2>Produtos em Destaque</h2>
 
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Produto</th>
-              <th>Preço</th>
-              <th>Categoria</th>
-            </tr>
-          </thead>
+        <!-- Lista de categorias -->
+        <aside class="categories">
+          <h3>Categorias</h3>
 
-          <tbody>
-            <tr>
-              <td>Fone</td>
-              <td>250,00</td>
-              <td>Eletrônicos</td>
-            </tr>
+          <ul>
+            <li>Eletrônicos</li>
+            <li>Roupas</li>
+            <li>Acessórios</li>
+          </ul>
+        </aside>
 
-            <tr>
-              <td>Mouse</td>
-              <td>180,00</td>
-              <td>TI</td>
-            </tr>
+        <!-- Tabela de produtos -->
+        <section class="product-list">
+          <h3>Lista de Produtos</h3>
 
-            <tr>
-              <td>Teclado</td>
-              <td>200,00</td>
-              <td>TI</td>
-            </tr>
-          </tbody>
-        </table>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Produto</th>
+                <th>Preço</th>
+                <th>Categoria</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Fone</td>
+                <td>250,00</td>
+                <td>Eletrônicos</td>
+              </tr>
+
+              <tr>
+                <td>Mouse</td>
+                <td>180,00</td>
+                <td>TI</td>
+              </tr>
+
+              <tr>
+                <td>Teclado</td>
+                <td>200,00</td>
+                <td>TI</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!--Formulário-->
+        <section id="contato">
+          <h2>Cadastro / Contato</h2>
+          <form class="form-contato" method="post" action="servidor.php">
+            <fieldset>
+              <legend>Dados para login</legend>
+              <label for="nome">Nome:</label> <br />
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite seu nome"
+                required
+                minlength="3"
+              />
+              <br />
+              <br />
+
+              <label for="idade">Idade</label> <br />
+              <input
+                type="number"
+                name="idade"
+                id="idade"
+                placeholder="Informe sua idade"
+                min="18"
+                max="120"
+                required
+              />
+              <br />
+              <br />
+
+              <label for="genero">Gênero</label> <br />
+              <select name="category" id="genero">
+                <option value="">Selecione...</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outro">Outro</option>
+              </select>
+              <br />
+              <br />
+
+              <label for="genero">Outros</label> <br />
+              <textarea
+                id="outro"
+                name="outro"
+                rows="2"
+                cols="30"
+                maxlength="25"
+                placeholder="Digite seu gênero"
+              ></textarea>
+            </fieldset>
+            <br />
+            <br />
+
+            <fieldset>
+              <legend>Demais informações</legend>
+              <label for="email">E-mail</label> <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Digite seu email"
+                required
+              />
+              <br />
+              <br />
+
+              <label for="senha">Senha</label> <br />
+              <input
+                type="password"
+                name="senha"
+                id="senha"
+                placeholder="Digite sua senha"
+                required
+                minlength="8"
+              />
+
+              <br />
+              <br />
+
+              <input type="radio" name="client-type" id="radio-pf" value="pf" />
+              <label for="radio-pf">Pessoa Física</label>
+              <br />
+              <input type="radio" name="client-type" id="radio-pj" value="pj" />
+              <label for="radio-pj">Pessoa Jurídica</label>
+
+              <br />
+              <br />
+              <legend>Como quer receber ofertas</legend>
+              <input
+                type="checkbox"
+                name="preferences"
+                id="check-offers"
+                value="offers"
+              />
+              <!-- ...value="offers" checked/> deixa pré-selecionado-->
+              <label for="check-offers">E-mail</label>
+              <br />
+              <input
+                type="checkbox"
+                name="preferences"
+                id="check-news"
+                value="news"
+              />
+              <label for="check-news">Whatsapp</label>
+              <br />
+              <input
+                type="checkbox"
+                name="preferences"
+                id="check-sup"
+                value="sup"
+              />
+              <label for="check-sup">Telegram</label>
+            </fieldset>
+          </form>
+        </section>
+
+        <!-- Artigos -->
+        <article>
+          <h3>Notebook</h3>
+          <p>Detalhes do Notebook</p>
+        </article>
+
+        <article>
+          <h3>Teclado</h3>
+          <p>Detalhes do Teclado</p>
+        </article>
       </section>
+    </main>
 
-      <!--Formulário-->
-      <section id="contato">
-        <h2>Cadastro / Contato</h2>
-        <form class="form-contato" method="post" action="servidor.php">
-         
-         <fieldset>
-         <legend>Dados para login</legend>
-          <label for="nome">Nome:</label> <br />
-          <input
-          type="text"
-          name="nome"
-          id="nome"
-          placeholder="Digite seu nome"
-          required
-          minlength="3"
-          />
-          <br> <br>
-
-          <label for="idade">Idade</label> <br />
-          <input
-          type="number"
-          name="idade"
-          id="idade"
-          placeholder="Informe sua idade"
-          min="18"
-          max="120"
-          required/>
-          <br> <br>
-
-      
-          <label for="genero">Gênero</label> <br />
-          <select name="category" id="genero">
-          <option value="">Selecione...</option>
-          <option value="feminino">Feminino</option>
-          <option value="masculino">Masculino</option>
-          <option value="outro">Outro</option>
-          </select>
-          <br> <br>
-          
-          <label for="genero">Outros</label> <br />
-          <textarea 
-          id="outro" 
-          name="outro" 
-          rows="2" 
-          cols="30"
-          maxlength="25" 
-          placeholder="Digite seu gênero"></textarea>
-
-          </fieldset>
-          <br> <br>
-          
-          <fieldset>
-          <legend>Demais informações</legend>
-          <label for="email">E-mail</label> <br>
-          <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Digite seu email"
-          required />
-          <br> <br>
-
-          <label for="senha">Senha</label> <br />
-          <input
-          type="password"
-          name="senha"
-          id="senha"
-          placeholder="Digite sua senha"
-          required
-          minlength="8"/>
-
-          <br />
-          <br />
-          
-          <input type="radio" name="client-type" id="radio-pf" value="pf" />
-          <label for="radio-pf">Pessoa Física</label>
-          <br />
-          <input type="radio" name="client-type" id="radio-pj" value="pj" />
-          <label for="radio-pj">Pessoa Jurídica</label>
-            
-          <br> <br>
-          <legend>Checkbox</legend>
-          <input
-          type="checkbox"
-          name="preferences"
-          id="check-offers"
-          value="offers"
-        />
-        <!-- ...value="offers" checked/> deixa pré-selecionado-->
-        <label for="check-offers">Receber ofertas</label>
-        <br />
-        <input
-          type="checkbox"
-          name="preferences"
-          id="check-news"
-          value="news"
-        />
-        <label for="check-news">Newsletter</label>
-        <br />
-        <input type="checkbox" name="preferences" id="check-sup" value="sup" />
-        <label for="check-sup">Suporte</label>
-
-          </fieldset>
-          
-
-          
-          
-        
-
-        </form>
-      </section>
-
-      <!-- Artigos -->
-      <article>
-        <h3>Notebook</h3>
-        <p>Detalhes do Notebook</p>
-      </article>
-
-      <article>
-        <h3>Teclado</h3>
-        <p>Detalhes do Teclado</p>
-      </article>
-    </section>
-
-
-
-  </main>
-
-  <footer class="footer">
-    <p>Todos os direitos reservados</p>
-  </footer>
-
-</body>
+    <footer class="footer">
+      <p>Todos os direitos reservados</p>
+    </footer>
+  </body>
 </html>
