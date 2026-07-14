@@ -1,0 +1,10 @@
+nav ul li{
+
+    /*display: block;*/
+    /*display: none;*/
+
+    display:inline-block;
+
+    margin-right: 16px;
+}
+
