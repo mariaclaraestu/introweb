@@ -13,7 +13,8 @@ body{
 
 #geral{
 
-    width: 900px;
+    width: 650px;
+    height: 2500px;
     margin: 30px auto;
     background-color: darkslateblue;
 
@@ -32,5 +33,89 @@ img{
    width: 200px;
    border: 3px solid red;
 
+
+}
+
+/*Entendendo POSITION*/
+
+/*celular*/
+/*position static*/
+#img1{
+
+    position: static; /*com static msm que eu mande ele se mover ele ignora os paramentro de movimentação*/
+    top: 100px; /*não funciona*/
+    left: 100px; /*não funciona*/
+}
+
+/*fone de ouvido*/
+/*position relative - a posição do elemento é relativo à sua posição original*/
+/*obs: o espaço original continua ocupado mesmo após sua movimentação*/
+#img3{
+
+    position: relative;/*relativo a caixa que ele está*/
+    top: 100px;
+    left: 100px;
+
+}
+
+/*position absolute*/
+/*elemento pai -> bloco1*/
+#bloco1{
+    position: relative;
+}
+
+/*elemento filho -> img2*/
+/*absolute -a posição do elemento é relativa ao seu elemento pai mais proximo que tenha position diferent de static*/
+/*obs: o espaço original ocupado fica livre após sua movimentação*/
+/*impressora*/
+#img2{
+
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+}
+
+/*position fixed*//*muito usado no menu*/
+/*alexa*/
+#img4{
+
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+/*
+----------------------------------------------------------
+Z-Index
+----------------------------------------------------------
+*/
+
+/*vamos testar o z-index com os blocos 1 e 2*/
+
+#bloco1{
+
+    position: relative;
+
+}
+
+#bloco2{
+
+    position: relative;
+    top: -120px;
+    left: 120px;
+}
+
+/*agora sim vamos conhecer o z-index*/
+
+#bloco1{
+
+    z-index: 2;
+
+}
+
+#bloco2{
+
+    z-index: 1;
 
 }
