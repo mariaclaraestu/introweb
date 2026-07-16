@@ -1,296 +1,310 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Loja</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+</head>
+
+<body>
+
     <!-- Cabeçalho -->
     <header class="header">
-      <h1>Minha Loja</h1>
+        <h1>Minha Loja</h1>
 
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#produtos">Produtos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main id="home">
 
-      <!-- Banner -->
-      <section class="banner" aria-label="Destaque principal">
-      <h2>Promoções Imperdíveis</h2>
-      <p>Os melhores produtos com os melhores preços!</p>
-</section>
-
-      <!-- Produtos -->
-      <section class="products" id="produtos">
-        <h2>Produtos em Destaque</h2>
-
-        <!-- Artigos -->
-        <article class="product-card">
-          <h3>Notebook</h3>
-          <figure>
-            <img
-              src="img/notebook.webp"
-              width="200"
-              loading="lazy"
-              alt="Notebook Gamer"
-            />
-            <figcaption>Notebook Gamer ROG Zephyrus Duo</figcaption>
-          </figure>
-        </article>
-
-        <article>
-          <h3>Teclado</h3>
-          <figure>
-            <img
-              src="img/teclado.webp"
-              width="200"
-              loading="lazy"
-              alt="Teclado Gamer"
-            />
-            <figcaption>
-              Teclado Gamer Ucal Switch Magnetic Rgb Preto Redragon
-            </figcaption>
-          </figure>
-        </article>
-          <br> <br>
-        <section class="promo-video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/XgaKOAwiVOw?si=0saX8XLECy2ePJ6V"
-            title="YouTube video player"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+        <!-- Banner -->
+        <section class="banner" aria-label="Destaque principal">
+            <h2>Promoções Imperdíveis</h2>
+            <p>Os melhores produtos com os melhores preços!</p>
         </section>
-        <br> 
-        
-        
-        <!-- Lista de categorias -->
-        <aside class="categories">
-          <h3>Categorias</h3>
 
-          <ul>
-            <li>Eletrônicos</li>
-            <li>Roupas</li>
-            <li>Acessórios</li>
-          </ul>
+        <!-- Produtos -->
+        <section class="products" id="produtos">
+
+            <h2>Produtos em Destaque</h2>
+
+            <article class="product-card">
+                <h3>Notebook</h3>
+
+                <figure>
+                    <img src="img/notebook.webp"
+                        alt="Notebook Gamer"
+                        width="200"
+                        loading="lazy">
+
+                    <figcaption>
+                        Notebook Gamer ROG Zephyrus Duo
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="product-card">
+                <h3>Teclado</h3>
+
+                <figure>
+                    <img src="img/teclado.webp"
+                        alt="Teclado Gamer"
+                        width="200"
+                        loading="lazy">
+
+                    <figcaption>
+                        Teclado Gamer Ucal Switch Magnetic RGB Preto Redragon
+                    </figcaption>
+                </figure>
+            </article>
+
+        </section>
+
+        <!-- Vídeo -->
+        <section class="promo-video">
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/XgaKOAwiVOw?si=0saX8XLECy2ePJ6V"
+                title="Vídeo promocional"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+        </section>
+
+        <!-- Categorias -->
+        <aside class="categories">
+            <h3>Categorias</h3>
+
+            <ul>
+                <li>Eletrônicos</li>
+                <li>Roupas</li>
+                <li>Acessórios</li>
+            </ul>
         </aside>
 
         <!-- Tabela de produtos -->
         <!--
         <section class="product-list">
-          <h3>Lista de Produtos</h3>
+            <h3>Lista de Produtos</h3>
 
-          <table border="1">
-            <thead>
-              <tr>
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>Categoria</th>
-              </tr>
-            </thead>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Categoria</th>
+                    </tr>
+                </thead>
 
-            <tbody>
-              <tr>
-                <td>Fone</td>
-                <td>250,00</td>
-                <td>Eletrônicos</td>
-              </tr>
+                <tbody>
+                    <tr>
+                        <td>Fone</td>
+                        <td>250,00</td>
+                        <td>Eletrônicos</td>
+                    </tr>
 
-              <tr>
-                <td>Mouse</td>
-                <td>180,00</td>
-                <td>TI</td>
-              </tr>
+                    <tr>
+                        <td>Mouse</td>
+                        <td>180,00</td>
+                        <td>TI</td>
+                    </tr>
 
-              <tr>
-                <td>Teclado</td>
-                <td>200,00</td>
-                <td>TI</td>
-              </tr>
-            </tbody>
-          </table>
-        </section> 
-        -->
-        
-
-        <!--Formulário-->
-        <section id="contato">
-          <h2>Cadastro / Contato</h2>
-          <form class="form-contato" method="post" action="servidor.php">
-            <fieldset>
-              <legend>Dados para login</legend>
-              <label for="nome">Nome:</label> <br />
-              <input
-                type="text"
-                name="nome"
-                id="nome"
-                placeholder="Digite seu nome"
-                required
-                minlength="3"
-              />
-              <br />
-              <br />
-
-              <label for="idade">Idade</label> <br />
-              <input
-                type="number"
-                name="idade"
-                id="idade"
-                placeholder="Informe sua idade"
-                min="18"
-                max="120"
-                required
-              />
-              <br />
-              <br />
-
-              <label for="genero">Gênero</label> <br />
-              <select name="category" id="genero">
-                <option value="">Selecione...</option>
-                <option value="feminino">Feminino</option>
-                <option value="masculino">Masculino</option>
-                <option value="outro">Outro</option>
-              </select>
-              <br />
-              <br />
-
-              <label for="genero">Outros</label> <br />
-              <textarea
-                id="outro"
-                name="outro"
-                rows="2"
-                cols="30"
-                maxlength="25"
-                placeholder="Digite seu gênero"
-              ></textarea>
-            </fieldset>
-            <br />
-            <br />
-
-            <fieldset>
-              <legend>Demais informações</legend>
-              <label for="email">E-mail</label> <br />
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Digite seu email"
-                required
-              />
-              <br />
-              <br />
-
-              <label for="senha">Senha</label> <br />
-              <input
-                type="password"
-                name="senha"
-                id="senha"
-                placeholder="Digite sua senha"
-                required
-                minlength="8"
-              />
-
-              <br />
-              <br />
-
-              <input type="radio" name="client-type" id="radio-pf" value="pf" />
-              <label for="radio-pf">Pessoa Física</label>
-              <br />
-              <input type="radio" name="client-type" id="radio-pj" value="pj" />
-              <label for="radio-pj">Pessoa Jurídica</label>
-
-              <br />
-              <br />
-              <legend>Como quer receber ofertas</legend>
-              <input
-                type="checkbox"
-                name="preferences"
-                id="check-offers"
-                value="offers"
-              />
-              <!-- ...value="offers" checked/> deixa pré-selecionado-->
-              <label for="check-offers">E-mail</label>
-              <br />
-              <input
-                type="checkbox"
-                name="preferences"
-                id="check-news"
-                value="news"
-              />
-              <label for="check-news">Whatsapp</label>
-              <br />
-              <input
-                type="checkbox"
-                name="preferences"
-                id="check-sup"
-                value="sup"
-              />
-              <label for="check-sup">Telegram</label>
-            </fieldset>
-          </form>
+                    <tr>
+                        <td>Teclado</td>
+                        <td>200,00</td>
+                        <td>TI</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-      </section>
+        -->
+
+        <!-- Sobre -->
+        <section id="sobre" class="about">
+            <h2>Sobre a Loja</h2>
+
+            <p>
+                Somos uma loja dedicada a oferecer produtos de qualidade,
+                oferecendo os melhores preços e atendimento para nossos clientes.
+            </p>
+        </section>
+
+        <!-- Formulário -->
+        <section id="contato">
+
+            <h2>Cadastro / Contato</h2>
+
+            <form class="form-contato" method="post" action="servidor.php">
+
+                <fieldset>
+
+                    <legend>Dados para login</legend>
+
+                    <label for="nome">Nome:</label><br>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        minlength="3"
+                        required>
+
+                    <br><br>
+
+                    <label for="idade">Idade:</label><br>
+
+                    <input
+                        type="number"
+                        id="idade"
+                        name="idade"
+                        placeholder="Informe sua idade"
+                        min="18"
+                        max="120"
+                        required>
+
+                    <br><br>
+
+                    <label for="genero">Gênero:</label><br>
+
+                    <select id="genero" name="genero">
+                        <option value="">Selecione...</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                    <br><br>
+
+                    <label for="outro">Outros:</label><br>
+
+                    <textarea
+                        id="outro"
+                        name="outro"
+                        rows="2"
+                        maxlength="25"
+                        placeholder="Digite seu gênero"></textarea>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>Demais informações</legend>
+
+                    <label for="email">E-mail:</label><br>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required>
+
+                    <br><br>
+
+                    <label for="senha">Senha:</label><br>
+
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        minlength="8"
+                        required>
+
+                    <br><br>
+
+                    <input
+                        type="radio"
+                        id="radio-pf"
+                        name="client-type"
+                        value="pf">
+                    <label for="radio-pf">Pessoa Física</label>
+
+                    <br>
+
+                    <input
+                        type="radio"
+                        id="radio-pj"
+                        name="client-type"
+                        value="pj">
+                    <label for="radio-pj">Pessoa Jurídica</label>
+
+                    <br><br>
+
+                    <p>Como deseja receber ofertas?</p>
+
+                    <input
+                        type="checkbox"
+                        id="check-email"
+                        name="preferences"
+                        value="email">
+                    <label for="check-email">E-mail</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="check-whatsapp"
+                        name="preferences"
+                        value="whatsapp">
+                    <label for="check-whatsapp">WhatsApp</label>
+
+                    <br>
+
+                    <input
+                        type="checkbox"
+                        id="check-telegram"
+                        name="preferences"
+                        value="telegram">
+                    <label for="check-telegram">Telegram</label>
+
+                </fieldset>
+
+            </form>
+
+        </section>
+
     </main>
 
+    <!-- Rodapé -->
     <footer class="footer">
-     
-      <h3>Nossa localização</h3>
-      <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14700.346199392541!2d-43.20862306403402!3d-22.9101783028719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b9b61fa!2sEdif%C3%ADcio%20Eco%20Sapuca%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1783607168253!5m2!1spt-BR!2sbr"
-      width="400"
-      height="300"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin"
-    ></iframe>
-     <h2>Sobre a Loja</h2>
-        <p>
-          Somos uma loja dedicada a oferecer produtos de qualidade com os
-          melhores preços.
-        </p>
-      </section>
 
-      <!-- Contato -->
-      <section id="contato" class="contact">
-        <h2>Contato</h2>
+        <section class="location">
 
-        <form aria-label="Formulário de contato">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" required />
+            <h3>Nossa localização</h3>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" required />
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14700.346199392541!2d-43.20862306403402!3d-22.9101783028719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f0c4e687185%3A0x973c7a140b9b61fa!2sEdif%C3%ADcio%20Eco%20Sapuca%C3%AD!5e0!3m2!1spt-BR!2sbr!4v1783607168253!5m2!1spt-BR!2sbr"
+                width="400"
+                height="300"
+                style="border:0"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
 
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
-    </main>
+        </section>
 
-    <footer>
-      <p>&copy; 2026 Minha Loja Online</p>
+        <p>&copy; 2026 Minha Loja</p>
+        <p>Todos os direitos reservados.</p>
+
     </footer>
-      <p>Todos os direitos reservados</p>
-    </footer>
-  </body>
+
+</body>
+
 </html>
